@@ -34,7 +34,7 @@ class getBit(models.Model):
         return self.url
 
     def get_code_url(self):
-        return reverse('code',kwargs={'code':self.shortcode},host='www',port='8000',scheme='http')
+        return reverse('code',kwargs={'code':self.shortcode}, host='www', scheme='http')
 
 
 

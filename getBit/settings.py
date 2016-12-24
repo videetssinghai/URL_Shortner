@@ -56,8 +56,8 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'getBit.urls'
 ROOT_HOSTCONF = 'getBit.hosts'
 DEFAULT_HOST = 'www'
-DEFAULT_REDIRECT_URL = "http://www.getBit.com:8000"
-PARENT_HOST = "getBit.com"
+DEFAULT_REDIRECT_URL = "http://www.getBit.com:5000"
+PARENT_HOST = "getBit.com:5000"
 
 TEMPLATES = [
     {

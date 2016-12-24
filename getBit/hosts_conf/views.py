@@ -1,7 +1,7 @@
 from django.http import HttpResponseRedirect
 from django.conf import settings
 
-DEFAULT_REDIRECT_URL = getattr(settings, "DEFAULT_REDIRECT_URL", "http://www.getBit.com:8000")
+DEFAULT_REDIRECT_URL = getattr(settings, "DEFAULT_REDIRECT_URL", "http://www.getBit.com:5000")
 
 
 def wilcard_redirect(request, path=None):
