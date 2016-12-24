@@ -5,8 +5,8 @@
     <title>Title</title>
     <div style="width:800px; margin: 0 auto;"></div>
 
-    <p> {{ object.url }}</p>
-    <p>{{ object.shortcode }}</p>
+    <p> <a href="{{ object.get_code_url }}">{{ object.get_code_url }}</a></p>
+    <p>{{ object.url }}</p>
 
 </head>
 <body>
