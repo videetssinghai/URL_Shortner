@@ -1,6 +1,7 @@
 from __future__ import unicode_literals
 from django.db import models
 from Code_Utils import create_shortcode
+from django_hosts.resolvers import reverse
 
 class getBit(models.Manager):
 

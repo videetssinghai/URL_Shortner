@@ -15,10 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from shortener.views import redirect_view
+from shortener.views import redirect_view, BasicView
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^a/(?P<shortcode>[\w-]+)/$',redirect_view),
-    url(r'^b/(?P<shortcode>[\w-]+){6,15}/$', admin.site.urls),
+    url(r'^$',BasicView.as_view()),
+    url(r'^(?P<code>[\w-]+){6,15}/$',redirect_view,name='code'),
 
 ]

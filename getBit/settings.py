@@ -57,10 +57,12 @@ ROOT_URLCONF = 'getBit.urls'
 ROOT_HOSTCONF = 'getBit.hosts'
 DEFAULT_HOST = 'www'
 DEFAULT_REDIRECT_URL = "http://www.getBit.com:8000"
+PARENT_HOST = DEFAULT_REDIRECT_URL
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,"templates")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
